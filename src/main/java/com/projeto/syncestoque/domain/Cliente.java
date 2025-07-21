@@ -1,14 +1,11 @@
 package com.projeto.syncestoque.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import jakarta.persistence.*;
 
-@Data
-@EqualsAndHashCode
+
+
+//@EqualsAndHashCode(of = "idCliente")
+@Table(name = "cliente_e")
 @Entity
 public class Cliente {
     @Id

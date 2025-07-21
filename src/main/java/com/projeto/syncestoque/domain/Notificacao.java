@@ -2,8 +2,13 @@ package com.projeto.syncestoque.domain;
 
 import jakarta.persistence.*;
 
-import java.time.LocalDate;
 
+import java.time.LocalDate;
+//@EqualsAndHashCode(of= "idNotificacao")
+
+
+@Entity
+@Table(name = "notificacao_e")
 public class Notificacao {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
