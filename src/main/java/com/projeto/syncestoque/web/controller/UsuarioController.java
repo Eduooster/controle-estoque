@@ -74,7 +74,6 @@ public class UsuarioController {
             @PageableDefault(size = 10, sort = { "nome" }) Pageable paginacao) {
 
         var page = listarUsuarios.listar(paginacao);
-        System.out.println(page);
 
         return ResponseEntity.ok(page);
     }
