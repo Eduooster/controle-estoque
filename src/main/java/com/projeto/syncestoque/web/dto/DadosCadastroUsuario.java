@@ -1,4 +1,4 @@
 package com.projeto.syncestoque.web.dto;
 
-public record DadosCadastroUsuario(String nome, String email, String senha) {
+public record DadosCadastroUsuario(String nome, String email, String senha, String role) {
 }
